@@ -26,7 +26,7 @@ async def show_products(callback: types.CallbackQuery, state: FSMContext):
         for item in items.keys()
     ]
     # Добавляем кнопку "🔙 Назад"
-    keyboard_buttons.append([types.InlineKeyboardButton(text="🔙 Назад", callback_data="back_to_categories")])
+    keyboard_buttons.append([types.InlineKeyboardButton(text="🔙 Назад" if lang == "ru" else "🔙 Orqaga", callback_data="back_to_categories")])
 
     keyboard = types.InlineKeyboardMarkup(inline_keyboard=keyboard_buttons)
 

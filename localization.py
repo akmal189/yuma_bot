@@ -62,6 +62,22 @@ messages = {
         }
     },
     "cart": {
+        "no_address": {
+            "ru": "Адрес не указан",
+            "uz": "Manzil koʻrsatilmagan"
+        },
+        "address": {
+            "ru": "Адрес",
+            "uz": "Manzil"
+        },
+        "request_location": {
+            "ru": "📍 Пожалуйста, отправьте вашу геопозицию для завершения заказа.",
+            "uz": "📍 Iltimos, buyurtmani yakunlash uchun joylashuvingizni yuboring."
+        },
+        "location_saved": {
+            "ru": "✅ Локация получена. Оформляем ваш заказ...",
+            "uz": "✅ Joylashuv qabul qilindi. Buyurtmangiz rasmiylashtirilmoqda..."
+        },
         "branch": {
             "ru": "Филиал",
             "uz": "Filial"
@@ -75,12 +91,12 @@ messages = {
             "uz": "Filial tanlanmagan"
         },
         "enter_comment": {
-            "ru": "Введите ваш комментарий:",
-            "uz": "Izohingizni kiriting:"
+            "ru": "Введите ваш комментарий и адрес для доставки:",
+            "uz": "Izohingizni kiriting va manzilingizni:"
         },
         "comment_saved": {
-            "ru": "✅ Комментарий сохранен",
-            "uz": "✅ Izoh saqlandi"
+            "ru": "✅ Комментарий и адрес сохранен",
+            "uz": "✅ Izoh va manzil saqlandi"
         },
         "your_cart": {
             "ru": "🛒Ваша корзина",
@@ -141,8 +157,8 @@ messages = {
             "uz": "⬅️ Orqaga"
         },
         "add_comment": {
-            "ru": "✅ Добавить комментарий",
-            "uz": "✅ Izoh qo‘shish"
+            "ru": "✅ Добавить комментарий и адрес для доставки",
+            "uz": "✅ Izoh va manzil qo‘shish"
         },
         "pay_online": {
             "ru": "✅ Оплатить онлайн",

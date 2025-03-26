@@ -13,6 +13,7 @@ router = Router()
 class CartStates(StatesGroup):
     waiting_for_comment = State()
     waiting_for_branch = State()
+    waiting_for_location = State()
 
 
 # 📌 Показать корзину (callback)
@@ -124,6 +125,7 @@ async def pay_cash(callback: types.CallbackQuery, state: FSMContext):
     await callback.message.answer(get_message("cart.choose_branch", lang), reply_markup=branch_keyboard(lang))
     await state.set_state(CartStates.waiting_for_branch)
 
+# 📌 Выбор филиала
 @router.callback_query(CartStates.waiting_for_branch)
 async def choose_branch(callback: types.CallbackQuery, state: FSMContext):
     branch = callback.data
